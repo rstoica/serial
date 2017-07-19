@@ -1,3 +1,9 @@
+# Temporary files/folders
+build
+*~
+*.*~
+
+# Legacy from original repo
 .*
 .DS_Store
 *.coverage
