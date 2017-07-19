@@ -17,14 +17,14 @@ API Documentation: http://wjwwood.github.com/serial/doc/1.1.0/index.html
 ### Dependencies
 
 Required:
-* [catkin](http://www.ros.org/wiki/catkin) - cmake and Python based buildsystem
+* ~~[catkin](http://www.ros.org/wiki/catkin) - cmake and Python based buildsystem~~
 * [cmake](http://www.cmake.org) - buildsystem
-* [Python](http://www.python.org) - scripting language
-  * [empy](http://www.alcyone.com/pyos/empy/) - Python templating library
-  * [catkin_pkg](http://pypi.python.org/pypi/catkin_pkg/) - Runtime Python library for catkin
+* ~~[Python](http://www.python.org) - scripting language~~
+  * ~~[empy](http://www.alcyone.com/pyos/empy/) - Python templating library~~
+  * ~~[catkin_pkg](http://pypi.python.org/pypi/catkin_pkg/) - Runtime Python library for catkin~~
 
 Optional (for tests): 
-* [Boost](http://www.boost.org/) - Boost C++ librairies
+* ~~[Boost](http://www.boost.org/) - Boost C++ librairies~~
 
 Optional (for documentation):
 * [Doxygen](http://www.doxygen.org/) - Documentation generation tool
@@ -32,17 +32,15 @@ Optional (for documentation):
 
 ### Install
 
-Get the code:
+Get the no-catkin build code branch:
 
-    git clone https://github.com/wjwwood/serial.git
+    git clone https://gitlab.com/rstoica/serial.git
+    git fetch origin
+    git checkout -b no-catkin-build origin/no-catkin-build
 
-Build:
+Build serial library:
 
-    make
-
-Build and run the tests:
-
-    make test
+    make serial
 
 Build the documentation:
 
